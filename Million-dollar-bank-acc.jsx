@@ -31,12 +31,12 @@ export default function App() {
 		4. Your code should be as DRY as possible!
 */
 	function handleChange(event) {
-		setUserInput(prev => ({...prev, [event.target.name]: event.target.value }))
+		setUserInput(prev => ({...prev, [event.target.name]: event.target.value }))		//solution
 	}
 	
 	function handleSubmit(event) {
 		event.preventDefault()
-		const combinedInput = Object.values(userInput).join("")
+		const combinedInput = Object.values(userInput).join("")					//solution
 		setVerified(combinedInput === passCode)
 	}
 
