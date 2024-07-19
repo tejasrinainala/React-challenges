@@ -38,7 +38,7 @@ export default function App() {
 		// This causes the green "Saved!" message to be rendered on line 130 below. The state then gets set back to false by the setTimeout on line 70, which removes the message.
 		const saveGadgets = JSON.parse(localStorage.getItem('widgetConfig')||DEFAULT_CONFIG)
 		if(saveGadgets)
-		{
+		{														//solution
 			setWidgetConfig(saveGadgets);
 		}
 		 
