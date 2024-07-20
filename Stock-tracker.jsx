@@ -37,7 +37,7 @@ export default function Stock({stock}) {
         Note: Don't overthink the part about the numbers being converted into strings. This will probably happen automatically in the course of solving this challenge, depending on how you approach it. 
 */               
     
-    const {stockName, logo, currentPrice, prevClosingPrice} = stock
+    const {stockName, logo, currentPrice, prevClosingPrice} = stock									//solution
         
     const numericalChange = (currentPrice - prevClosingPrice).toFixed(2)
         
@@ -47,7 +47,7 @@ export default function Stock({stock}) {
     
     let arrow 
     
-    if (rateChange > 0) {
+    if (rateChange > 0) {							
         colorClass = "green"
         arrow = "⬆"
     } else if (rateChange < 0) {
