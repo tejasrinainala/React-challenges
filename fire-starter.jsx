@@ -52,7 +52,7 @@ export default function App() {
   
   	function toggleTorch() {
 		  setTorchEquipped(!torchEquipped)
-	  }
+	  }													//solution
 	  
 	function handleMouseEnter() {
 		if (torchEquipped) {
