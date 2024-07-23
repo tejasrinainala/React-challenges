@@ -18,7 +18,7 @@ Two DiaryCard components are currently hardcoded with data below. Your task is t
         
     3. Make the code concise. 
 */
-    const diaryCardElements = diaryData.map( day => {
+    const diaryCardElements = diaryData.map( day => {                                        //solution
         return (
              <DiaryCard
                 key={day.id}
