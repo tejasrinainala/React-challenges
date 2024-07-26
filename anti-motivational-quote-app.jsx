@@ -97,13 +97,13 @@ export default function App() {
     Tip: Invoke showState(currentData) anywhere in the top level of this component to see the currentData state and familiarize yourself with its content and structure. 
 */
 
-    const fontSizeOne = currentData.image.quoteFontSize
+    const fontSizeOne = currentData.image.quoteFontSize                                        //solution
     const fontSizeTwo = currentData.text.quoteFontSize
 
     const fontSize = getSmallestFontSize(fontSizeOne, fontSizeTwo)
 
     return (
-        <div className="wrapper" style={currentData.image.wrapperStyles}>
+        <div className="wrapper" style={currentData.image.wrapperStyles}>                                                                              
             <div className="quote-container" style={currentData.image.containerStyles}>
                 <p className="quote" style={fontSize}>
                     {currentData.text.fakeQuote}
