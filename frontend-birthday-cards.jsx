@@ -31,7 +31,7 @@ export default function App() {
 	
 	function handleMouseDown(event) {
 		setCardData({
-			mouseButtonDown: true,
+			mouseButtonDown: true,									//solution
 			initialPosition: event.clientX,
 			cardOpen: false
 		})
@@ -57,7 +57,7 @@ export default function App() {
 				<InnerMessage />
 				
 				<div
-					onMouseUp={handleMouseUp}
+					onMouseUp={handleMouseUp}				
 					onMouseMove={handleMouseMove}
 					onMouseDown={handleMouseDown}
 					className={`cover ${cardData.cardOpen && "open"}`}
